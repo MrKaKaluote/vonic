@@ -2,7 +2,9 @@
   <div von-app>
     <navbar></navbar>
     <transition name="page" v-on:before-enter="beforePageEnter">
-      <router-view></router-view>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </transition>
   </div>
 </template>
