@@ -42,7 +42,7 @@
     z-index: 2;
   }
   .page-enter-active {
-    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    //box-shadow: 0 0 10px rgba(0,0,0,.15);
   }
   .page-enter-to {
     @include view-center();
@@ -78,7 +78,7 @@
     z-index: 2;
   }
   .page-leave-active {
-    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    //box-shadow: 0 0 10px rgba(0,0,0,.15);
   }
   .page-leave-to {
     @include view-right();
