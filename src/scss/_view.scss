@@ -6,7 +6,7 @@
 }
 
 @mixin view-left() {
-  @include translate3d(-33%, 0, 0);
+  @include translate3d(0, 0, 0);
 }
 
 @mixin view-center() {
@@ -27,8 +27,12 @@
 .grade-b .page-enter-active,
 .grade-b .page-leave-active
 {
-  @include transition-duration($android-transition-duration);
-  @include transition-timing-function($android-transition-timing-function);
+  //@include transition-duration($android-transition-duration);
+  //@include transition-timing-function($android-transition-timing-function);
+  @include transition-duration($ios-transition-duration);
+  @include transition-timing-function($ios-transition-timing-function);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
 }
 
 [transition-direction="forward"] {
