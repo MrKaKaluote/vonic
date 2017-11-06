@@ -6,7 +6,7 @@
 }
 
 @mixin view-left() {
-  @include translate3d(-33%, 0, 0);
+  @include translate3d(-100%, 0, 0);
 }
 
 @mixin view-center() {
@@ -27,8 +27,8 @@
 .grade-b .page-enter-active,
 .grade-b .page-leave-active
 {
-  @include transition-duration($android-transition-duration);
-  @include transition-timing-function($android-transition-timing-function);
+  @include transition-duration($ios-transition-duration);
+  @include transition-timing-function($ios-transition-timing-function);
 }
 
 [transition-direction="forward"] {
@@ -38,7 +38,7 @@
     z-index: 2;
   }
   .page-enter-active {
-    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    //box-shadow: 0 0 10px rgba(0,0,0,.15);
   }
   .page-enter-to {
     @include view-center();
@@ -74,7 +74,7 @@
     z-index: 2;
   }
   .page-leave-active {
-    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    //box-shadow: 0 0 10px rgba(0,0,0,.15);
   }
   .page-leave-to {
     @include view-right();

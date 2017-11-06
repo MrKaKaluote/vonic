@@ -41,10 +41,10 @@
   width: auto;
   height: auto;
   background-color: $default-page-bg;
-  -webkit-overflow-scrolling: touch;
+  //-webkit-overflow-scrolling: touch;
 
   &.no-scrolling {
-    -webkit-overflow-scrolling: auto;
+    //-webkit-overflow-scrolling: auto;
   }
 
   &.padding-top {
